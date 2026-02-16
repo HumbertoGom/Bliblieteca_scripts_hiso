@@ -1,0 +1,32 @@
+from PySide6.QtWidgets import QMainWindow,QApplication
+from PySide6.QtGui import QKeyEvent
+from PySide6.QtCore import QObject,QEvent
+from window import Ui_MainWindow
+from typing import cast
+
+
+class MainWindow(QMainWindow,Ui_MainWindow):
+    def __init__(self,parent=None):
+        super().__init__(parent)
+        self.setupUi(self)
+
+        self.ButtonSend.clicked.connect(self.changeLabelResult)
+        self.LineName.setStyleSheet('background: red;')
+        self.LineName.installEventFilter(self)
+    
+    def changeLabelResult(self):
+        text = self.LineName.text()
+        self.LabelResult.setText(text)
+    
+    def eventFilter(self, watched : QObject, event: QEvent):
+        if event.type() == QEvent.Type.KeyPress:
+            event = cast(QKeyEvent, event)
+            text = self.LineName.text()
+            self.LabelResult.setText(text + event.text())
+        return super().eventFilter(watched, event)
+    
+if __name__ == "__main__":
+    app = QApplication()
+    mainWindow = MainWindow()
+    mainWindow.show()
+    app.exec()

@@ -1,0 +1,19 @@
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).parent
+FILES_DIR = ROOT_DIR / 'files'
+WINDOW_ICON_PATH = FILES_DIR / 'gumgum.ico'
+
+
+#Sizing
+BIG_FONT_SIZE = 40
+MEDIUM_FONT_SIZE = 24
+SMALL_FONT_SIZE = 18
+TEXT_MARGIN = 15
+MINIMUM_WIDTH = 600
+
+#colors
+
+PRIMARY_COLOR= '#00b5d1'
+DARKER_PRIMARY_COLOR ='#3ea1b0'
+DARKEST_PRIMARY_COLOR = '#19606b'
