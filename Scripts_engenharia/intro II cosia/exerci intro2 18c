@@ -1,0 +1,14 @@
+p = 1
+s = 0 
+p2 = 1
+for i in range(3):
+    i=i+1
+    for j in range(3):
+        j+= 10
+        for k in range(3):
+            k+=7
+            p2*=(i+j)/k 
+        s+= p2 
+        p2= 1
+    p*= s 
+print(p)

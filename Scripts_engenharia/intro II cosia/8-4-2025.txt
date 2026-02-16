@@ -1,0 +1,120 @@
+8-4-2025
+
+compleq visita técnica?
+>da próxima vez trazer dosbox, impressionar
+
+retomando sistemas lineares
+A.x = y
+
+linsolve(A,-y)
+inv(A)*y
+
+o problema não é saber o comando para resolver, mas sim como escreve o código.
+
+nada mudou, eu ainda os ouço
+
+		EXEMPLO DE BALANÇO DE MASSA
+
+equacionando os equipamento
+
+misturador, o que sai = entra.
+Reator: o que saí é 20% do que entra mais os 80% que se converteram;.
+recuperação, 75% da corrente 3 antes de se dividir foi para 4.
+
+montando sistemas lineares com dados de cada equação usando a vazão de cada corrente. isolando números para ficar na matriz y
+
+isso é chamado de matriz esparça,tem muito 0.
+
+
+
+
+como ele resolve esse problema no Scilab.
+
+>define Xa =0.8 e RECa4=0.75
+
+>começa com uma nula 5x5,sendo a matriz coeficiente
+	A = zeros(5,5)
+	y= zeros(5,1)
+>na primeira linha, os valores 1,2 e 4 tem quais valores
+	A(1,[1,2,4]) =[1,-1, 1]
+>na segunda linhas, os valores 2 e 3 são:
+	A(2,[2,3]) = [1-Xa,-1]
+>na linha 3
+	A(3,[3,4]) = [RECa4,-1]
+>na linha 4  
+	A(4,[3,5]) = [1-RECa4,-1]
+>na linha 5
+	A(5,1) = 1
+>para o Y
+	y(5) = 1000
+
+
+
+mesmo sistema, so que 
+Nb1 = 7mol/s
+
+no reator:A -> 2B
+RECb4 = 0.03
+
+misturador: N2b = Nb1 +Nb4
+
+reator Nb3 = Nb2 + 2Na2 * Xa
+saída --/\   /\entrada  /\--conversão
+
+
+conversão só existe para quando o reagente é definido. grau de avanço?
+\\sair para caminhar, deu certo
+
+
+
+
+
+sistema com infinitas soluções
+
+escalamento por linhas rref()
+aplica escalamento reduzido por linhas a matriz estendida
+
+A=[2,1,-1;
+	1,2,1]
+y=[7,8]
+
+
+rref vai tentar transformar em uma identidade, mas como e SPI, vai dar outra coisa
+cada coluna corresponde: x1  x2 x3 e termo independente
+
+para a terceira coluna virar identidade, teria que ter uma terceira linha
+a coluna x3 é dependente linearmente das outras duas.
+
+>
+
+
+separou como I2x2 , (x1;x2) +(-1;1) = (2,3)
+Identidade pode ser omitida.
+
+#morse em capslock
+
+(x1;x2)=(2;3) - (-1,1)x3
+x1 e x2 são variáveis básicas
+x3 é uma variável livre, não foi possível ajustar
+
+x3 como 0,da a solução mais fácil.
+
+custo: 5x1 +2x2 +3x3 
+assujeito a: x1,x2,x3>=0
+
+o problema passa a depender apnas de uma variável, fazendo o problema de otimização a partir apenas da variável livre
+
+How to get TM29 
+Go to Andela Town
+Head north to Route 13
+Make a left
+Go up the small staircase
+Keep going past the grass and the old people
+Find the giant staircase
+Run through the grass to the giant boulder
+Use the Strength ability to push the strength block two spaces
+Take TM29
+
+
+
+

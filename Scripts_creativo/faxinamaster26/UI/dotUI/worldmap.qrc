@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="WM">
+    <file>world map fm26.png</file>
+  </qresource>
+  <qresource prefix="newPrefix"/>
+</RCC>

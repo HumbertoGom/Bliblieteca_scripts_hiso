@@ -1,0 +1,53 @@
+//contador de "xingamentos": 3
+
+function f= func(x)
+    f(1)= x(1) +2*x(1)*x(2)-3
+    f(2) = x(1)-exp(x(1)*x(2))
+endfunction
+
+
+//o chute
+
+//bruh perdi sigurd no Ch1
+
+clc; clear; close;
+
+function f=func(x)
+    f(1) = x(1)+2*x(1)*x(2)-3
+    f(2) = x(1)-exp(x(1)*x(2))
+endfunction
+
+function [x,f,IT]=NossoNR(x0,func)
+    tol = 1e-6
+    ITMAX = 100 // nº max de iterações
+    f0 = func(x0)
+    df0 = numderivative(func,x0)
+    passo = -inv(df0)*f0
+    IT = 0 //contador de iterações
+    while norm(f0)>tol & IT<ITMAX
+    	x1 = x0+passo
+    	f1 = func(x1)
+    	if norm(f1)<norm(f0) then
+    		x0 = x1
+    		f0 = f1
+    		df0 = numderivative(func,x0)
+    		passo = -inv(df0)*f0
+    	else
+    		passo = passo/2
+    	end
+    IT = IT+1
+end
+if norm(f0)<tol then
+    x=x0; f=f0
+else
+    x = []; f = []
+end
+endfunction
+
+x0 = [1;2]
+[x,f,IT]=NossoNR(x0,func)
+[xScilab,fscilab] = fsolve(x0,func) 
+
+disp(NossoNR(x0,func))
+
+disp(fsolve(x0,func))
