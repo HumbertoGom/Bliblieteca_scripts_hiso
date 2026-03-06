@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+    <style>
+        body {font-family:'Courier New', Courier, monospace;}
+
+        label {cursor: pointer;display: block;}
+
+    </style>
+</head>
+<body>
+    <h1> Formularios ad Suave</h1>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+      <h2>cabeçalho</h2>
+        <fieldset>
+            <legend>Dorcas Radio Pendrive</legend>
+            <p>
+                <label>Data</label>
+                <input id="data1" type="date" name="data_evento"
+                value="2020-4-20">
+            </p>
+            <p>
+                <label>Datetime-local</label>
+                <input id="data2" type="datetime-local" name="data_evento2"
+                value="20-4-2020T20:00">
+
+                <label>Time</label>
+                <input id="data3" type="time" name="data_evento3"
+                value="20:00">
+            </p>
+           
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Tipos  2</legend>
+
+            <label for="cores">Cor preferida: </label>
+            <input type="color" id="cores" name="cores" value="#ff0000">
+
+             <label for="email">Email: </label>
+            <input type="email" id="email" name="email" value="seuemail@dominio.com">
+
+             <label for="file">Seu arquivo: </label>
+            <input type="file" id="file" name="file" value=""
+            accept=".png,image/*" multiple>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Tipos 3? faz o que</legend>
+
+            <label for="number">Escolha um número </label>
+            <input type="number" id="number" name="number" value="Digite um número"
+            min="1" max="10">
+
+            <label for="password">Sua Senha:</label>
+            <input type="password" id="password" name="password"
+            placeholder="Digite sua senha">
+
+            <label for="range">O quanto doi??</label>
+            <input type="range" id="range" name="range"
+            min="0" max="20" step="5" list="tickmarks">
+            <datalist id="tickmarks">
+                <option value="0" label="0%">
+                <option value="5" label="25%"></option>
+                <option value="10" label="50%"></option>
+                <option value="15" label="75%"></option>
+                <option value="20" label="100%"></option>
+            </datalist>
+        </fieldset>
+
+
+        <p>
+            <button type="submit"> Enviar </button>
+            <!-- todo botão type submit envia o formulário-->
+            <button typé="reset"> Reset</button>
+        </p>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+
+
+
+body {color:greenyellow;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black;
+padding-bottom: 100%;
+font-size: 20px;}
+
+p {
+    font-size:initial
+}
+/* Initial faz não herdar*/
+
+.texto {
+    box-sizing: border-box;
+    display: block;
+    background-color: darkslategray;
+    width: 50%;
+    height: 50%;
+    overflow-y: auto;
+    max-width: 0px;
+    max-height: 500px ;
+    min-height: 100px;
+    min-width: 50%;
+    margin: 0 auto 50px auto;
+    padding: 50px;
+    border: 5px solid white}
+
+/* display inline: era para ser continuada, não recebe tamanho ou fundo
+*/
+/* Overflow: escolha eixo,e pode esconder o que saí de sua área
+/*Overflow Scroll e auto: barra de rolar para ver alem. auto so coloca bara quando precisa
+
+/*height e width alteram tamanho, suas versões max e min tambem.
+
+margin auto faz a <div> se ajustar ao meio da tela
+
+box sizing content box: margin padding e border é somado a area do conteudo
+cresce para fora
+
+border-box: dimensões definidas são respeitadas ate a border. 
+só a margin indo  para fora

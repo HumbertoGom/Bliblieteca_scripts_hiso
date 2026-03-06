@@ -1,0 +1,86 @@
+* {margin: 0; padding: 0;
+box-sizing: border-box;}
+
+html {background-color: rgb(0, 9, 92);}
+
+.flex-container {background-color: rgb(21, 255, 0);
+
+display: inline-flex;
+flex-direction: row;
+justify-content:space-between;
+align-items: center;
+flex-flow: row wrap;
+width: 400px;}
+
+.flex-item {background: rgb(0, 0, 0);
+    width: 30%;
+    height: 100px;
+    flex-basis: 320px;
+    flex-grow: 1;
+    flex-shrink:  1;
+margin: 4px;
+color:white}
+
+/*
+todos os elementos passaram a ocupar a altura intira,
+e com um do lado do outro
+
+flex-direction
+direção do eixo principal,
+todos elementos se alinhaam nessa direção
+por padrão: row
+
+justify content
+direção dos elementos,sempre guiado pelo eixo principal
+
+flex-start: no começo do eixo principa
+flex-end: final do exio principal
+center: centro do eixo principal
+space around: distribui os elementos com espaços iguais
+space between:igual ao outro,só que começa do 0
+
+
+align items
+como serão alinhados no eixo secundario
+
+stretch: estica em relação ao eixo secundário
+center:todos no centro sem esticar a tela.
+baseline: baseline da fonte do texto,um texto maior faz 
+a box maior
+
+flex-wrap
+se não tiver espaço nessa linha,ocupar outra l inha
+
+
+flex grow
+crescer o elemento até o preencher o espaço
+
+atalho flex
+arg1:grow
+arg2:shrink
+arg3:basis
+valores de grow e shrink são em proporção
+
+
+CSS tricks
+
+*/
+
+body {font-size: 24px;}
+.two-columns {display:flex;}
+
+
+.two-columns {
+    display: flex;
+    
+    background-color: lawngreen;
+    margin: 15px;
+    padding: 30px;
+}
+
+.gallery{display: flex}
+
+.gallery .img {width: 100%;height: 50px;
+background: blue;
+flex-flow: row wrap;
+margin: 10px;}

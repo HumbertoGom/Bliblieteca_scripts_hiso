@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>310</y>
+      <width>801</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="6">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>Lck</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="7">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>Def</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Str</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Skl</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="Baseslabel">
+       <property name="text">
+        <string>Bases</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="Growthslabel">
+       <property name="text">
+        <string>Growths</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>HP</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>Spd</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Mag</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Stats</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="8">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>Res</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QSpinBox" name="SB_HPB"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="QSpinBox" name="SB_HPGR"/>
+     </item>
+     <item row="2" column="2">
+      <widget class="QSpinBox" name="SB_StrGR_2"/>
+     </item>
+     <item row="2" column="3">
+      <widget class="QSpinBox" name="SB_MagGR_3"/>
+     </item>
+     <item row="2" column="4">
+      <widget class="QSpinBox" name="SB_SklGR_4"/>
+     </item>
+     <item row="2" column="5">
+      <widget class="QSpinBox" name="SB_SpdGR_5"/>
+     </item>
+     <item row="2" column="6">
+      <widget class="QSpinBox" name="SB_LckGR_6"/>
+     </item>
+     <item row="2" column="7">
+      <widget class="QSpinBox" name="SB_DefGR_7"/>
+     </item>
+     <item row="2" column="8">
+      <widget class="QSpinBox" name="SB_ResGR_8"/>
+     </item>
+     <item row="1" column="2">
+      <widget class="QSpinBox" name="SB_StrB"/>
+     </item>
+     <item row="1" column="3">
+      <widget class="QSpinBox" name="SB_MagB"/>
+     </item>
+     <item row="1" column="4">
+      <widget class="QSpinBox" name="SB_SklB"/>
+     </item>
+     <item row="1" column="5">
+      <widget class="QSpinBox" name="SB_SpdB"/>
+     </item>
+     <item row="1" column="6">
+      <widget class="QSpinBox" name="SB_LckB"/>
+     </item>
+     <item row="1" column="7">
+      <widget class="QSpinBox" name="SB_DefB"/>
+     </item>
+     <item row="1" column="8">
+      <widget class="QSpinBox" name="SB_ResB"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="UnitName">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>251</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>36</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Unit Name</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="DescriptionLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Description</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>231</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Uma unidade bem capaz,mas&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ela só da join no capitlu 17&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Class_Preview">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>30</y>
+      <width>211</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="naraki_resources.qrc">:/newPrefix/solider_placeholder.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="CB_ClassSelect">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>190</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Classlabel">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>190</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Class:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>40</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Game Data</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Gamelabel">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>90</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Game:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="CB_GameSelect">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>90</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>FE1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FE2 </string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FE3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FE4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FE5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FE6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FE7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FE8</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FE9</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FE10</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FE11</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FE12</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FE13</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FE14</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuInfo">
+    <property name="title">
+     <string>Info</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuOptions"/>
+   <addaction name="menuInfo"/>
+  </widget>
+ </widget>
+ <resources>
+  <include location="naraki_resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

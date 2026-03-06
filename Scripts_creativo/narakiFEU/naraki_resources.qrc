@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>solider_placeholder.png</file>
+  </qresource>
+</RCC>

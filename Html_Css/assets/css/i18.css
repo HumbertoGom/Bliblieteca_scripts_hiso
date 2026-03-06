@@ -1,0 +1,41 @@
+* {margin:0; padding: 0;}
+
+.heading:hover {background:  red;}
+
+.heading {transition: all 1s ease-in-out;}
+
+a {color: darkorange;}
+
+a:link {color: deeppink;}
+
+a:hover {background: darkslateblue;
+color: white;
+text-decoration: none;}
+
+a:active {
+    background-color: darkslategray;
+}
+/*
+input:focus {box-shadow: 0 0 5px rgba(0,0,0,0.5);
+outline: none;
+border: 10px solid rgb(76, 0, 255)}
+
+input:disabled {background-color: rebeccapurple;
+cursor: not-allowed}
+*/
+
+input:checked{width: 50px;height: 50px;}
+
+input:checked +p {background: red;} 
+input:not(:checked) +p {background: yellow;}
+
+/*.pai ul li:last-child{background: red;}*/
+
+p:not(.MEIO) {color: blue;}
+
+ul li:nth-child(odd) {background-color: rebeccapurple;}
+ul li:nth-child(even) {background-color: darkturquoise;}
+/* tambem pode usar (even) para pares, e (odd) para todos os ímpares
+*/
+
+ul li:nth-child(4n-2) {text-decoration:underline;}

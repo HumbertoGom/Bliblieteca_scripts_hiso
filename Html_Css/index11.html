@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre listas</title>
+    <style>
+        .section-three{ 
+                        background: blue;
+                        height: 20px;
+                        }
+        nav {
+        background: rgba(0,0,0,0.6);}
+        
+        nav a:hover {background: rgba(0,0,0,0.1);}
+
+        nav ul li a {color:rgb(0,255 ,255 );
+        text-decoration: none;
+        font-family: Impact;
+        font-size: 40px;
+        height: 40px;
+        }
+
+        nav{display: flex;
+        justify-content: center;}
+
+        nav ul { display: flex;
+        list-style: none;
+        margin-left: 10px;}
+    </style>
+</head>
+<body>
+    <section id="section-three">
+        <nav>
+        <ul>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 3</a></li>
+        </ul>
+            </nav>
+    
+
+        <ol type="i" start="2">
+            <li>Item 2</li>
+            <li>Item 1</li>
+            <li>Item 3</li>
+        </ol>
+        <dl>
+            <dt>Café</dt>
+            <dd>Bebída preta e quente</dd>
+            <dt>Melancia</dt>
+            <dd>fruta grande com muita água</dd>
+        </dl>
+    </section>
+</body>
+</html>

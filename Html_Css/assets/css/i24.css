@@ -1,0 +1,55 @@
+* {margin: 0; padding: 0;}
+
+.pai{ height: 600vh;}
+
+.filha1, .filha2 .filha3 {
+    width: 300px; 
+    height: 300px;
+background-color: rgba(0,0,0,0.7);
+
+font-size: 80px;
+position: static}
+
+.filha2 {background-color: yellow; 
+    position: relative;
+        width: 300px; 
+    height: 300px;
+    z-index: 1;}
+
+.filha1 {
+    position: absolute;
+    width: 300px;
+    height:  300px;
+    z-index: 2;
+
+    left: 50%;
+    top: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+
+
+ }
+
+ .filha3 {background-color: blue;
+position: relative;
+    width: 300px; 
+    height: 300px;
+top: 100px}
+
+/* posição static
+não muda de posição 
+desabilita:top left right e bottom
+
+relative
+posição relativa em relação a outros elementos
+
+absolute
+posição absoluta em relação a viewport
+sem depedner de vizinhos
+isso permite ocupar camadas superiores a outros elementos
+
+defininir top left right e bottom como:0 faz elemento ocupar tela inteira
+
+
+filhos da relative,se alinham em relação ao pai
+mesmo se filho tiver absolute, não vai sair do pai

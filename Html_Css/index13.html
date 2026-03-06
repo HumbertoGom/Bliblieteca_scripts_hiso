@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+    <style>
+        body {font-family:'Courier New', Courier, monospace;}
+
+        label {cursor: pointer;display: block;}
+
+    </style>
+</head>
+<body>
+    <h1> Formularios da Kagome</h1>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+      <h2>cabeçalho</h2>
+        <fieldset>
+            <legend>Descrição</legend>
+            <p>
+              <label>Nome:</label>
+                
+              <input id="input1" type="text" name="input1" 
+            placeholder="dedede" required/>
+            </p>
+          <p>
+              <label for="raki">Trabalha para o raki?:</label>
+                
+              <input id="input2" type="checkbox" name="input2" 
+           value="raki!" />
+            </p>
+                      <p>
+              <label for="raki">fez o trabalho?:</label>
+                
+              <input id="input3" type="checkbox" name="input3" 
+           value="raki!!"  />
+            </p>
+
+            <p>
+           
+            </p>
+                <h3> ja namorou</h3>
+                <label>nunca</label>
+              <input id="nunca" type="radio"  name="nam"
+           value="V"  />
+                  <label>apenas uma vez</label>
+              <input id="uma_vez" type="radio" name="nam"
+           value="U"  />
+                          <label>Sou literalmente o shippo</label>
+              <input id="passou_rodo" type="radio"  name="nam"
+           value="S"  />
+            <!--mesmo name garante que os radius fiquiem ligados-->
+   
+            </p>
+
+        </fieldset>
+        <p>
+            <button type="submit"> Enviar </button>
+            <!-- todo botão type submit envia o formulário-->
+            <button typé="reset"> Reset</button>
+        </p>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,68 @@
+* {margin: 0; padding: 0;}
+
+html {font-size: 62.5%; 
+    background-image: url(https://preview.redd.it/can-somebody-give-me-a-higher-quality-image-of-this-rem-v0-mh7y7n51xeqf1.jpg?width=300&format=pjpg&auto=webp&s=3d0801ea0fec00f6e928029f4c604a6a339ba635);
+   scroll-behavior: smooth;}
+/*62.5 = 10px*/ 
+
+
+.pai { width: 100rem;
+    height: 100rem;
+    background-color: rgba(0,128,25,0.6);
+    font-size: 2.5rem;}
+
+.pai .filho{ font-size: 1.6rem;}
+
+.pai div {background-color: aquamarine;
+width: 50%; height: 50%;}
+/* 
+Oink Oink
+
+
+Medidas absolutas:
+sempre o mesmo tamanho,independente do zoom
+
+Medidas relativas:
+tamanho altera com base nas proporções da janela
+100% sempre ocupara toda área
+
+px
+pixels, a area da tela é composta por um numero determinado de pixels
+
+
+Relativas
+
+em
+elemento se comporta baseado no pai mais próximo
+ex: pai tem 50px, filho com 1em tem 50px
+se for 0.5em ,será metade do pai.
+em é relativo ao elemento do pai
+
+rem
+ele é baseado no elemento root do documento: o <html>
+
+vw
+1vw = 1% da largura do viewport
+1-100
+
+vh 
+1vh = 1% da altura do viewport
+
+100vw e 100vs, a tag assume o tamanho inteiro da tela em qualquer escala
+
+
+link ancora
+<a> com href =#"id", navega até onde ele fica na página.
+
+
+%
+porcentagem é relativo ao pai
+
+vmin 
+relativa a menor parte da viewport
+
+vmax
+relativa ao maior parte da viewport
+ 
+no celular vertical, altura é o vmax e largura vmin
+no PC e celular de lado, largura é o vmax,e altura o vmin

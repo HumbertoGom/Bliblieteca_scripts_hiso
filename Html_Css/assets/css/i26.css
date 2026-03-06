@@ -1,0 +1,84 @@
+* {margin: 0; padding: 0;}
+
+html {scroll-behavior: smooth;}
+
+
+.grid {
+    padding: 15px;
+    max-width: 1200px;
+    margin:0 auto;
+    padding-top:95px
+}
+
+
+.grid .col {
+    box-sizing: border-box;
+    display: block;
+    width: 33.3%;
+    height: 300px;
+    background: rgba(128,0,128,0.5) ;
+    border: 1px solid black;
+    float: left;
+
+}
+
+.grid::after {
+    content: '';
+    display: block;
+    clear: both
+}
+
+
+.grid .col .col-content {width: 100%;
+    height: 100%;}
+
+
+.menu {width: 100%;position: fixed; 
+    background-color: black;}
+
+.menu ul {list-style: none; 
+    display: block;
+     max-width: 1200px;
+    padding: 15px;}
+
+.menu ul li {float: left;}
+
+.menu ul li a {display: block;
+     color:fff; 
+     padding: 20px;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;}
+
+.menu ul li a:hover{background-color: #333;}
+
+
+.under {
+    padding: 15px;
+    max-width: 100%;
+    margin:0 auto;
+    padding: top 95px ;
+    height: 100vh;
+    background-color: turquoise;
+}
+
+.under-content {max-width: 1200px;
+    padding: 0 30px;
+    margin:  0 auto;}
+
+
+@media (max-width: 320px) {.grid .col {width: 100%;}}
+
+@media (min-width: 321px) and (max-width:768px) {.grid .col {width: 50%;}}
+
+@media (min-width: 769px) and (max-width:1200px) {.grid .col {width: 33.33%;}}
+
+@media (min-width: 1201px)  {.grid .col {width: 25%;}}
+
+/*
+se a condição do @media for atingida, CSS será subistituido
+
+condições suportam argumentos como "and" "not()" e "or"
+*/
+
+
+

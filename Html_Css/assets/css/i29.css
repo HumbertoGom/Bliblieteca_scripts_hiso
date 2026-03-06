@@ -1,0 +1,51 @@
+* {margin: 0; padding: 0;}
+
+
+.grid {display: grid;
+grid-template-columns:[um] 1fr [dois] 1fr [tres] 1fr [quatro];
+display: grid;
+gap: 10px;
+max-width: 1200px;}
+
+.grid div {background-color: rgb(255, 184, 53);
+min-height: 100px;}
+
+
+.grid div:nth-child(even) {
+    /*grid-column-start: dois;
+    grid-column-end: tres;*/
+    background-color: rgb(255, 221, 149);
+    
+}
+
+/*
+@media (max-width: 768px) {
+.grid div:nth-child(5) {
+    grid-row: span 1;
+    grid-column: span 1;
+    
+}}
+
+/*
+1fr 
+um fragmento é o resto da tela
+
+grip-template-colums
+cada argumento define largura de uma coluna
+
+repeat()
+arg1: quantas vezes repetir
+arg2: o que repetir
+
+minmax()
+arg:mínimo de comprimento
+arg2:máximo de comprimetno
+repeat(auto-fill, minmax(320px,1fr), uma linha que faz o design todo
+
+colunas podem ser nomeadas
+grid-template-columns:[um] 1fr [dois] 1fr [tres] 1fr ;
+
+
+grid-colum
+1/4 - da coluna 1 até a tres
+um/quatro

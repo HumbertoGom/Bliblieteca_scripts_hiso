@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palacio TM</title>
+</head>
+<style>
+    body {font-family: sans-serif;}
+
+    table td,table th {border: 1px solid #ccc; padding: 10px;}
+
+    table {border-collapse:collapse ;
+    width: 800px;}
+
+    table thead {background: rgb(121, 121, 121);}
+    table caption {caption-side: top; text-align: left;
+    font-style: italic;font-size: 14px}
+    table td {background: rgb(226, 226, 226);}
+
+    table tfoot tr td{background: white;}
+
+    .arraste {max-width: 100%;overflow-x: auto;}
+</style>
+<body>
+    <section>
+        <H2> Bem vindo ao Palacio <sup>TM</sup></H2>
+        <p> eu sou a princesa do palácio</p>
+    </section>
+  <div class="arraste">
+    <table>
+        <caption> quantas pessoas vi hoje</caption>
+        <thead>
+            <tr>
+                <th>Quantidade</th>
+                <th>Aldeões     </th>
+                <th>Nobres      </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dia</td>
+                <td>120</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Tarde</td>
+                <td>153</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>Noite</td>
+                <td colspan="2" >Não lembro</td>
+                
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td> Totais</td>
+                
+                <td colspan="2" rowspan="2">não sei</td>
+            </tr>
+            <tr>
+                <td>...? </td>
+            </tr>
+        </tfoot>
+
+    </table>
+  </div>
+</body>
+</html>

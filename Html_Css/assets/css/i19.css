@@ -1,0 +1,53 @@
+* {margin:0; padding: 0;}
+
+ul li::before {content: '-'; 
+background: red;
+color:azure;
+padding-right: 40px;}
+/*criando um pseudo-elemento 
+pseudo elementos criam elementos mas em STYLE*/
+
+/*
+p::first-letter {font-size: 50px; 
+    display: block; 
+    float: left;
+    margin: 0 10px 10px 0}
+
+p::first-line {background: cyan;}
+
+p::selection {background: black;color: white;}
+
+::placeholder {font-size: 17px; color: red;}
+*/
+/*
+ID Classes, Atributos e pseudo-classes, Elementos e Pseudo-elementos
+1               0                            0
+0               1                            0 
+0               0                            1
+Maior especificidade predomina
+
+Em empate,a última instrução predomina
+*/
+
+/*
+#p {background-color: red;}
+.p {background-color: green;}
+id vem primeiro
+*/ 
+
+
+.p#p {background-color: green;}
+#p {background-color: red;}
+/*nesse caso, a primeira instrução vence porque tem especidade 11
+*/
+
+#p.p ::selection{background-color: purple;}
+
+/*tag <style> no HTML vence qualquer seletor normal CSS*/
+
+/*"!important" comando força a regra ocorrer
+!important ta um nível acima.
+guarde para último recurso
+*/
+
+p {background-color: blue !important; }

@@ -1,0 +1,25 @@
+    .caixa {background: yellow; 
+        height:120px;
+        width:120px}
+* {margin:0; padding: 0;}
+
+/*p {color: darkblue} commentarios em css */
+
+div {margin-left: 20px}
+
+
+.main-content  {font-style: italic;}
+.main-content .heading  {color: red;}
+
+.pai {color: red;}
+/* blocos filhos sempre herdam dos pais,a não ser que especificado*/
+
+.pai .filha {color: blue;}
+/* seleção de dependente*/
+
+.pai.filha {color: green;}
+/*Isso é seleção colada, afeta apenas os que tem as duas classes*/
+
+.pai>.filha>.filha {color: gray;}
+/*Child selector- com ">" escolhemos apenas a filha da classe selecionada .pai
+só funciona com filhos diretos*/

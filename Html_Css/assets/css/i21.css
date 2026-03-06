@@ -1,0 +1,79 @@
+* {margin: 0; padding: 0;}
+
+
+
+.grid {
+    padding: 15px;
+}
+
+
+.grid .col {
+    box-sizing: border-box;
+    display: block;
+    width: 33.3%;
+    height: 300px;
+    background: rgba(128,0,128,0.5) ;
+    border: 1px solid black;
+    float: left;
+
+}
+
+.grid::after {
+    content: '';
+    display: block;
+    clear: both
+}
+
+
+.grid .col .col-content {width: 100%;
+    height: 100%;}
+
+/*
+display block:um abaixo do outro
+inline-block: na mesma linha,até onde der
+
+float
+fluta para onde tem espaço vazio.
+margins passam a ser separadas
+
+float faz o parent das divs não ter tamanho definido
+
+clear
+limpa algum lado, limpado a esquerda, 
+o <p> ficara onde não tem nada a sua esquerda
+
+
+Cores
+
+Nome
+Chamar cores por nome
+limitado as cores nomeadas
+
+Hexadecimal
+3 pares de números respresentando a soma de 3 cores
+Red Green Blue
+00 red + 00 Green + 00 blue = preto
+
+hexadecimal usa base 16: 0 1 2 3 4 5 6 7 8 9 a b c d e f
+ff siginifca 256
+ff|00|00 = 256 red 0 green 0 blue= Red
+
+
+RGB
+mesma coisa só que com numeros
+rgb(0,0,0) = preto
+rgb(255,0,0) = vermelho
+rgb(255,255,255) = branco
+
+RGBA
+o quarto argumento respresenta alfa. transparencia
+rgba(0,0,0,1) preto sóldo
+rgba(0,0,0,0.5) preto transparente
+rgba(0,0,0,0) invisível
+
+HSL
+Hue,Saturation, lightning
+
+Hue - qual a cor
+Saturation - insaturado(cinza) ou cor forte
+Lightning - claro ou escuro

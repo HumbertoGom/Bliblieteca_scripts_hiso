@@ -1,0 +1,12 @@
+* {margin: 0; padding: 0;}
+
+ul {height: 100px;
+overflow-y: auto;}
+
+
+ul li.sticky2 {position:sticky;
+    background-color: gray;
+    top:0;}
+/*
+fixed
+é como absolute,só que rolar a página não faz ir para tras

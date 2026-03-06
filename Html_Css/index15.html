@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios 3</title>
+</head>
+<body>
+    <form>
+    <fieldset>
+        <p>
+        <label for=url> Sua URL:</label>
+        <input type="url" id="url" name="url" placeholder="URL">
+        </p>
+
+        <p>
+            <label for="select">Selecione alugma opção:</label>
+            <!-- Select tem "multiple" selecionar multiplas opções-->
+            <select id="select" name="select">
+                <optgroup label="teste1">
+                <option value="valor enviado" label="valor observado"></option>
+                <option value="valor enviado2" label="valor observado2"> </option>
+                <option value="valor enviado3" label="valor observado3" selected> </option>
+                </optgroup>
+
+                <optgroup label="teste2">
+                    <option value="valor enviado4" label="Sanduiche"></option>
+                    <option value="valor enviado5" label="Ovo"> </option>
+
+                </optgroup>
+            </select>
+
+            <p>
+                <label for="textarea">Inserir textos </label>
+                <textarea name="textarea" id="textarea"
+                rows="5" cols="30"></textarea>
+            </p>
+
+        </p>
+    </fieldset>
+
+          <p>
+            <button type="submit"> Enviar </button>
+            <!-- todo botão type submit envia o formulário-->
+            <button typé="reset"> Reset</button>
+        </p>
+
+    </form>
+</body>
+</html>
