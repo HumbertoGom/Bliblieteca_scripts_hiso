@@ -1,3 +1,9 @@
+#Projeto pessoal, Experimento de dados com Python e HTML
+#Usa openpyxl para abrir estrutura de dados excel,
+#e remontar arquivo como planilha,usando CSS grid.
+
+
+
 from openpyxl import Workbook,load_workbook
 from pathlib import Path
 

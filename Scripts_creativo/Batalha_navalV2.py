@@ -1,3 +1,7 @@
+#Projeto pessoal para prática de código python
+#O Script faz um jogo de batalha naval,que é jogado por input do usario
+#o jogo esta completo,funcional ,e tem opção de difficuldades
+
 import random
 
 mapa= [[0 for _ in range(6)] for _ in range(6)]

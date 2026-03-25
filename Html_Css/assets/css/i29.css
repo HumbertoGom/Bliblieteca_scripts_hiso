@@ -2,12 +2,13 @@
 
 
 .grid {display: grid;
-grid-template-columns:[um] 1fr [dois] 1fr [tres] 1fr [quatro];
+
 display: grid;
 gap: 10px;
 max-width: 1200px;}
 
 .grid div {background-color: rgb(255, 184, 53);
+    grid-template-columns: 1fr 1fr;
 min-height: 100px;}
 
 
@@ -16,6 +17,27 @@ min-height: 100px;}
     grid-column-end: tres;*/
     background-color: rgb(255, 221, 149);
     
+}
+
+/*
+.grid div:nth-child(1){
+    grid-area: header;
+}
+
+.grid div:nth-child(2){
+    grid-area: navigation;
+}
+
+.grid div:nth-child(3){
+    grid-area: main;
+}
+
+.grid div:nth-child(4){
+    grid-area: footer;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /*

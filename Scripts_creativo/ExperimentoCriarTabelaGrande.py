@@ -1,3 +1,8 @@
+#Projeto Pessoal
+#teste com Openpyxl para gerar tabela de vendas usando nomes e valores sorteados com random.
+#o script gera uma plinlha de 100 linhas com valores pseudo-aleatórios
+
+
 
 from random import choice,randint,random,choices,uniform
 from openpyxl import Workbook

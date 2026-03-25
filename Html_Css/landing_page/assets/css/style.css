@@ -1,0 +1,147 @@
+.intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    gap: var(--gap);
+    min-height: 100vh;
+   
+}
+
+.intro-text-content, .intro-img {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+    justify-self: center;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+}
+
+.intro-text-content h2 {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.intro-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.top3-content {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100vh;
+    max-width: 64rem;
+    text-align: center;}
+
+.grid-one-content {
+display: flex;
+/*    flex-flow: column wrap;*/
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height:100vh;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right:2rem
+}
+
+.grid-main-heading  {
+    margin-bottom: 1rem;
+}
+
+.grid-description {
+    padding-bottom: 6rem;
+}
+
+.grid {display: grid;
+  grid-template-columns: repeat(3,1fr);
+    counter-reset: grid-counter}
+
+.grid h3 {font-size: 3rem;
+position: relative;
+padding-left:5rem;
+padding-bottom: 3rem;}
+
+
+.grid h3::before {counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+font-size: 8rem;
+font-style: italic;
+top:-3rem;
+left:-1rem;
+transform: rotate(5deg)}
+
+.gallery-img {
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.gallery-img img {
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover {
+    transform: translate(3rem,0)
+    scale(1.2)
+    rotate(10deg) ;
+}
+
+.contact-form {
+    grid-column: span 2;
+    display: flex;
+
+}
+
+.contact-form .form-grid {
+    border: none;
+    font-display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+
+}
+
+.form-grid .form-group {
+    flex: 1 1 32rem
+}
+
+
+.form-group label {
+    display: block;
+}
+
+.form-group input, .form-group textarea{
+    border: none;
+    background:white;
+    padding: 1.5rem 2rem;
+    width: 100%;
+}
+
+.form-group button {
+    border:0.2rem solid white;
+    background: none;
+    color: white;
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor:pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background:    white;
+    color: var(--primary-color)
+
+}
+
+.form-grid legend {
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+.form-group ::placeholder{
+    color:lightgray
+}
